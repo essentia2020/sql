@@ -1,0 +1,16 @@
+# dump делал через экспорт/импорт в workbench
+
+19:49:12 Dumping example (users)
+Running: mysqldump.exe --defaults-file="c:\users\aace~1\appdata\local\temp\tmpjrvs0g.cnf"  --user=root --host=localhost --protocol=tcp --port=3306 --default-character-set=utf8 --skip-triggers "example" "users"
+19:49:13 Export of C:\Users\Дмитрий\Documents\dumps\Dump20200701 has finished
+19:52:57 Restoring example (users)
+Running: mysql.exe --defaults-file="c:\users\aace~1\appdata\local\temp\tmpdffnwz.cnf"  --protocol=tcp --host=localhost --user=root --port=3306 --default-character-set=utf8 --comments --database=example < "C:\\Users\\Дмитрий\\Documents\\dumps\\Dump20200701\\example_users.sql"
+19:52:57 Import of C:\Users\Дмитрий\Documents\dumps\Dump20200701 has finished
+
+# Проблема в том, что результат выводит так:
+# id, name
+'5', '╨б╨╕╨┤╨╛╤А╨╛╨▓ ╨Ю.╨С.'
+'3', '╨С╤А╨╛╨╜╨╜╨╕╤Ж╨║╨╕╨╣ ╨Ъ.╨б.'
+'1', '╨Ш╨▓╨░╨╜╨╛╨▓ ╨Ь.╨Т.'
+'2', '╨Ю╤А╨╗╨╛╨▓ ╨Р.╨Т.'
+'4', '╨Я╨╡╤В╤А╨╛╨▓ ╨Т.╨Э.'
