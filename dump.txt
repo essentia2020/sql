@@ -14,3 +14,4 @@ Running: mysql.exe --defaults-file="c:\users\aace~1\appdata\local\temp\tmpdffnwz
 '1', '╨Ш╨▓╨░╨╜╨╛╨▓ ╨Ь.╨Т.'
 '2', '╨Ю╤А╨╗╨╛╨▓ ╨Р.╨Т.'
 '4', '╨Я╨╡╤В╤А╨╛╨▓ ╨Т.╨Э.'
+Проблема решилась добавлением строки вначале SET NAMES utf8;
