@@ -1,3 +1,4 @@
+SET NAMES utf8;
 -- База данных для социальной сети
 
 DROP DATABASE IF EXISTS vk;
@@ -118,6 +119,7 @@ CREATE TABLE media(
 DROP TABLE IF EXISTS likes;
 CREATE TABLE likes (
 	id SERIAL PRIMARY KEY,
+    object_id BIGINT UNSIGNED NOT NULL,
 	from_profile_id BIGINT UNSIGNED NOT NULL,
     to_profile_id BIGINT UNSIGNED NOT NULL,
     object ENUM('post', 'message', 'comment', 'media'),
